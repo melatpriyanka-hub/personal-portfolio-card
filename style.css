@@ -1,0 +1,332 @@
+
+/* =================================
+   PREMIUM PORTFOLIO DESIGN
+   White + Navy + Cobalt Blue
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #eaf1ff, #f8faff, #e5edff);
+    min-height: 100vh;
+    padding: 45px 18px;
+    color: #26364a;
+}
+
+/* Main Portfolio Card */
+.portfolio-card {
+    max-width: 850px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(20, 45, 78, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+    box-shadow: 0 25px 70px rgba(20, 45, 78, 0.20);
+}
+
+/* Profile Section */
+.profile {
+    background: linear-gradient(125deg, #142d4e, #1f4f91, #2864d7);
+    color: white;
+    text-align: center;
+    padding: 55px 25px 48px;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile::before {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    background: rgba(255,255,255,0.07);
+    border-radius: 50%;
+    top: -130px;
+    right: -60px;
+}
+
+.profile::after {
+    content: "";
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 50%;
+    bottom: -110px;
+    left: -50px;
+}
+
+.profile img {
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    outline: 5px solid rgba(255,255,255,0.22);
+    object-fit: cover;
+    margin-bottom: 22px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    transition: transform 0.4s ease;
+}
+
+.profile img:hover {
+    transform: scale(1.07);
+}
+
+.profile h1 {
+    font-size: 36px;
+    font-weight: 750;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.profile h3 {
+    color: #d8e7ff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 17px;
+    position: relative;
+    z-index: 1;
+}
+
+.profile p {
+    max-width: 580px;
+    margin: auto;
+    line-height: 1.8;
+    color: #e7efff;
+    font-size: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Common Section Styling */
+section {
+    padding: 32px 38px;
+}
+
+section h2 {
+    color: #142d4e;
+    font-size: 23px;
+    font-weight: 750;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: none;
+    position: relative;
+}
+
+section h2::after {
+    content: "";
+    position: absolute;
+    width: 65px;
+    height: 4px;
+    background: linear-gradient(90deg, #2864d7, #79a8ff);
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+section p {
+    color: #536579;
+    line-height: 1.9;
+    font-size: 15px;
+}
+
+/* Skills Section */
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: none;
+}
+
+.skills li {
+    background: #eef3fc;
+    color: #214d91;
+    padding: 11px 19px;
+    border: 1px solid #dce7fa;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 650;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.skills li:hover {
+    background: #2864d7;
+    color: white;
+    transform: translateY(-4px);
+    box-shadow: 0 7px 18px rgba(40, 100, 215, 0.2);
+}
+
+/* Projects Section */
+.project {
+    background: linear-gradient(135deg, #f7f9fe, #edf3fc);
+    padding: 22px;
+    margin-bottom: 17px;
+    border: 1px solid #e1eaf8;
+    border-left: 5px solid #2864d7;
+    border-radius: 13px;
+    transition: all 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(20, 45, 78, 0.10);
+    border-left-color: #142d4e;
+}
+
+.project h3 {
+    color: #173b69;
+    font-size: 18px;
+    margin-bottom: 9px;
+}
+
+.project p {
+    color: #536579;
+    line-height: 1.7;
+}
+
+/* Contact Section */
+.contact {
+    background: #f5f8fd;
+    border-top: 1px solid #e8eef7;
+}
+
+.contact p {
+    margin-bottom: 7px;
+}
+
+/* Contact Button */
+.contact button {
+    background: linear-gradient(120deg, #2864d7, #174a9c);
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-top: 17px;
+    font-size: 15px;
+    font-weight: 650;
+    letter-spacing: 0.3px;
+    box-shadow: 0 7px 18px rgba(40, 100, 215, 0.22);
+    transition: all 0.3s ease;
+}
+
+.contact button:hover {
+    background: linear-gradient(120deg, #174a9c, #142d4e);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 23px rgba(40, 100, 215, 0.3);
+}
+
+/* Footer */
+footer {
+    background: #142d4e;
+    color: #dce8f8;
+    text-align: center;
+    padding: 22px 15px;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    body {
+        padding: 18px 10px;
+    }
+
+    .portfolio-card {
+        border-radius: 17px;
+    }
+
+    .profile {
+        padding: 40px 18px;
+    }
+
+    .profile img {
+        width: 125px;
+        height: 125px;
+    }
+
+    .profile h1 {
+        font-size: 27px;
+    }
+
+    .profile h3 {
+        font-size: 16px;
+    }
+
+    .profile p {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 25px 20px;
+    }
+
+    section h2 {
+        font-size: 21px;
+    }
+
+    .skills ul {
+        gap: 9px;
+    }
+
+    .skills li {
+        padding: 9px 13px;
+        font-size: 13px;
+    }
+
+    .project {
+        padding: 17px;
+    }
+}
+
+
+/* Premium Profile Photo Decoration */
+.profile img {
+    border: 5px solid #ffffff;
+    outline: 5px solid #8db7ff;
+    box-shadow:
+        0 0 0 10px rgba(255,255,255,0.10),
+        0 12px 35px rgba(0,0,0,0.25);
+    transition: all 0.4s ease;
+}
+
+.profile img:hover {
+    transform: scale(1.08) rotate(2deg);
+    box-shadow:
+        0 0 0 12px rgba(255,255,255,0.15),
+        0 15px 40px rgba(0,0,0,0.3);
+}
+
+/* Decorative Background */
+body {
+    background:
+        radial-gradient(circle at 10% 10%, #d4e4ff 0, transparent 25%),
+        radial-gradient(circle at 90% 90%, #c8dcff 0, transparent 25%),
+        #f5f8ff;
+}
+
+/* Section Hover Effect */
+section {
+    transition: background 0.3s ease;
+}
+
+section:hover {
+    background-color: #fbfcff;
+}
